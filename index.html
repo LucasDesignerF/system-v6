@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System V6 - Seu Bot de E-commerce no Discord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/heroicons@2.0.13/24/outline/index.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <svg class="h-10 w-10 text-white mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="text-2xl font-bold">System V6</span>
+            </div>
+            <div class="space-x-4">
+                <a href="#features" class="hover:underline">Funcionalidades</a>
+                <a href="#how-to-use" class="hover:underline">Como Usar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">System V6: Transforme seu Servidor Discord em uma Loja Virtual</h1>
+            <p class="text-lg md:text-xl mb-8">Gerencie vendas, leilões, sorteios e mais com um bot poderoso e fácil de usar!</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Funcionalidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Vendas -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M3 3v18M3 3l18 18M3 21H21M3 21l18-18" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Sistema de Vendas</h3>
+                    <p class="text-gray-600">Crie uma vitrine de produtos, gerencie carrinhos e processe pagamentos via PIX com aprovação manual.</p>
+                </div>
+                <!-- Leilões -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Leilões Interativos</h3>
+                    <p class="text-gray-600">Organize leilões em canais dedicados, com lances em tempo real e finalização automática.</p>
+                </div>
+                <!-- Indicações -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v2h5m-2-2a3 3 0 005.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Programa de Indicações</h3>
+                    <p class="text-gray-600">Incentive clientes a indicar amigos e ganhe pontos para descontos em compras.</p>
+                </div>
+                <!-- Relatórios -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h10a2 2 0 012 2v12a2 2 0 01-2 2z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Relatórios e Rankings</h3>
+                    <p class="text-gray-600">Acesse relatórios de vendas, rankings de clientes e alertas de estoque baixo.</p>
+                </div>
+                <!-- Sorteios -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Sorteios Automatizados</h3>
+                    <p class="text-gray-600">Crie sorteios com prêmios, permitindo participação via botões e seleção automática de vencedores.</p>
+                </div>
+                <!-- Segurança -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <svg class="h-8 w-8 text-blue-600 mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-2.76-2.24-5-5-5S2 8.24 2 11v7h10v-7zm0 0c0-2.76 2.24-5 5-5s5 2.24 5 5v7H12v-7z" />
+                    </svg>
+                    <h3 class="text-xl font-semibold mb-2">Seguro e Configurável</h3>
+                    <p class="text-gray-600">Controle permissões, configure canais e personalize textos para uma experiência única.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section id="how-to-use" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Como Usar o System V6</h2>
+            <div class="space-y-8">
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold">1</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Adquira o Bot</h3>
+                        <p class="text-gray-600">Obtenha o System V6 e adicione-o ao seu servidor Discord seguindo as instruções fornecidas.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold">2</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Configure os Canais</h3>
+                        <p class="text-gray-600">Use <code>/admin_panel</code> para definir canais de vitrine, aprovação, entregas e logs.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold">3</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Gerencie Produtos e Estoque</h3>
+                        <p class="text-gray-600">Adicione categorias, produtos e estoque via <code>/admin_panel</code>.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold">4</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Ative Leilões e Sorteios</h3>
+                        <p class="text-gray-600">Crie leilões com <code>/leilao_criar</code> e sorteios com <code>/sorteio_criar</code>.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center text-xl font-bold">5</div>
+                    <div class="ml-4">
+                        <h3 class="text-xl font-semibold">Incentive com Indicações</h3>
+                        <p class="text-gray-600">Configure o sistema de pontos com <code>/indicacoes_configurar</code> e engaje clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 System V6. Todos os direitos reservados.</p>
+            <p class="mt-2">Desenvolvido por ©DataBit Soluções</p>
+        </div>
+    </footer>
+</body>
+</html>
